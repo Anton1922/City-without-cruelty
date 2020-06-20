@@ -1,0 +1,105 @@
+.cruelty-needs {
+	padding: 120px 140px 135px;
+
+	&__title {
+		margin-bottom: 55px;
+		text-align: center;
+	}
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__card {
+		width: 45%;
+		max-width: 560px;
+
+		&--last {
+			position: relative;
+			background-image: url("images/needs-dog-min.png");/*https://less-homeless.com/wp-content/uploads/2020/06/needs-dog-min.png*/
+			background-size: auto;
+			background-position: 40% 75%;
+		}
+
+		&-background {
+			position: relative;
+		}
+
+		&-number {
+			font-weight: 900;
+			font-size: 288px;
+			line-height: 1.4;
+			color: #eca900;
+			text-shadow: -1px 0 #d3d3d3, 0 1px #d3d3d3, 1px 0 #d3d3d3, 0 -1px #d3d3d3;
+		}
+
+		&-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding-top: 80px;
+			padding-left: 80px;
+		}
+
+		&-title {
+			position: relative;
+			margin-bottom: 0;
+			max-width: 420px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 1.5;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 12px;
+				left: -82px;
+				width: 53px;
+				border-top: 3px solid #213632;
+			}
+		}
+
+		&-text {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 1.5;
+
+			&:not(.cruelty-needs__card-text--first) {
+				margin-top: 10px;
+			}
+		}
+
+		&-button {
+			position: absolute;
+			bottom: 60px;
+			left: 0;
+			max-width: 120px;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 1.4;
+			color: #77583f;
+			transition: all 0.3s linear;
+
+			&:hover {
+				color: #800000;
+			}
+
+			& svg {
+				position: absolute;
+				left: 5%;
+				bottom: -70%;
+				stroke: #000;
+				transition: left 0.3s linear;
+			}
+
+			&:hover svg {
+				left: 20%;
+				stroke: #800000;
+			}
+		}
+	}
+
+
+}
