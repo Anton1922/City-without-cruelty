@@ -1,0 +1,145 @@
+.cruelty-rectangles {
+	display: grid;
+	grid-template-rows: minmax(min-content, 423px) minmax(min-content, 423px);
+	grid-template-columns: repeat(36, 1fr);
+
+	&__grey {
+		grid-row: 1 / 2;
+		grid-column: 1 / 17;
+		background-color: #f8f8f8;
+
+		&--second {
+			grid-row: 2 / 3;
+			grid-column: 17 / 37;
+			display: grid;
+			grid-template-columns: repeat(18, 1fr);
+			grid-template-rows: repeat(10, minmax(min-content, 42.3px));
+			position: relative;
+		}
+	}
+
+	&__cat {
+		grid-column: 5 / 18;
+		grid-row: 1 / 2;
+		z-index: 100;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		max-width: 592px;
+	}
+
+	&__yellow {
+		grid-row: 1 / 2;
+		grid-column: 17 / 37;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #eca900;
+
+		&-title {
+			max-width: 463px;
+			margin-bottom: 30px;
+		}
+
+		&-description {
+			max-width: 483px;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 1.5;
+		}
+	}
+
+	&__white {
+		grid-row: 2 / 3;
+		grid-column: 1 / 17;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+
+		&-description {
+			max-width: 468px;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 1.8;
+		}
+	}
+
+	&__woman {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+
+		&-image {
+			width: 100%;
+		}
+	}
+
+	&__line {
+		//position: absolute;
+
+		
+
+		&--big {
+			//top: 10%;
+			//left: 10%;
+			grid-row: 2 / 7;
+			grid-column: 2 / 6;
+
+			@media screen and (max-width: 1300px) {
+				grid-row: 3 / 7;
+			}
+
+			@media screen and (max-width: 1100px) {
+				grid-row: 4 / 8;
+			}
+
+			@media screen and (max-width: 900px) {
+				grid-row: 5 / 9;
+			}
+
+			& img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&--small-left {
+			grid-row: 2 / 3;
+			grid-column: 15 / 16;
+			position: relative;
+
+			& img {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+
+		&--small-middle {
+			grid-row: 2 / 3;
+			grid-column: 16 / 17;
+			position: relative;
+
+			& img {
+				position: absolute;
+				bottom: 0;
+				left: 30%;
+			}
+		}
+
+		&--small-right {
+			grid-row: 2 / 3;
+			grid-column: 17 / 18;
+			position: relative;
+
+			& img {
+				position: absolute;
+				bottom: -10%;
+				left: -20%;
+			}
+		}
+	}
+}
