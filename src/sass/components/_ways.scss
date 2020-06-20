@@ -1,0 +1,107 @@
+.cruelty-ways {
+	display: flex;
+
+	&__image {
+		width: 30%;
+		background-image: url("images/ways-dog-color-min.jpg");/*https://less-homeless.com/wp-content/uploads/2020/06/ways-dog-color-min.jpg*/
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&__content {
+		padding: 115px 30px;
+		width: 70%;
+		background-color: #eca900;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		color: #161515;
+	}
+
+	&__description {
+		margin-bottom: 40px;
+		max-width: 678px;
+		color: #242020;
+	}
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.2;
+		color: #393131;
+	}
+
+	&__container {
+		display: flex;
+	}
+
+	&__donate, &__partner {
+		display: flex;
+		flex-wrap: wrap;
+		width: 45%;
+		max-width: 373px;
+	}
+
+	&__donate-icon, &__partner-icon {
+		margin-bottom: 20px;
+	}
+
+	&__donate-subtitle, &__partner-subtitle, &__donate-description, &__partner-description {
+		margin: 20px 0 10px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #393131;
+	}
+
+	&__donate-description, &__partner-description {
+		margin-bottom: 30px;
+		font-weight: 500;
+	}
+
+	&__button {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: auto;
+		width: 250px;
+		height: 55px;
+		border: 2px solid #f4eaea;
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.4;
+		color: #393131;
+		transition: all 0.25s linear;
+
+		&::after {
+			content: url(images/ways-arrow-min.png);
+			position: absolute;
+			right: -25%;
+			transition: all 0.25s linear;
+		}
+
+		&:hover {
+			background-color: #aa5a1a;
+			border-color: #aa5a1a;
+			color: #fff;
+		}
+
+		&:hover::after {
+			right: -30%;
+		}
+	}
+
+	&__donate {
+		margin-right: 20px;
+
+		&-button {
+			border-color: #d57120;
+			background-color: #d57120;
+		}
+	}
+
+
+}
