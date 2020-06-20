@@ -38,8 +38,11 @@
 	&__phone-number {
 		margin-bottom: 10px;
 		font-size: 24px;
-		//line-height: 1.2;
 		color: #d57120;
+
+		&:hover {
+			color: #eca900;
+		}
 	}
 
 	&__email {
@@ -48,6 +51,10 @@
 		font-weight: normal;
 		font-size: 16px;
 		color: #213632;
+
+		&:hover {
+			color: #eca900;
+		}
 	}
 
 	&__social {
@@ -116,11 +123,12 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-end;
 		background-color: #fff;
 
 		&-container {
 			max-width: 465px;
+			margin-right: 100px;
 		}
 
 		&-subtitle {
@@ -156,7 +164,59 @@
 				border-top: 2px solid #213632;
 			}
 		}
+
+		&-buttons {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-right: 11px;
+		}
+
+		&-button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 43px;
+			margin-right: 25px;
+			width: 250px;
+			height: 55px;
+			color: #213632;
+			font-family: Roboto;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.4;
+
+			&--filled {
+				border: 2px solid #eca900;
+				background-color: #eca900;
+
+				&:hover {
+					background-color: #d57120;
+					border-color: #d57120;
+					color: #fff;
+				}
+			}
+
+			&--unfilled {
+				border: 2px solid #807522;
+
+				&:hover {
+					border-color: #a0922b;
+					background-color: #a0922b;
+					color: #fff;
+				}
+			}
+		}
 	}
 
+	&__heart {
+		grid-row: 3 / 4;
+		grid-column: 7 / 8;
+		position: relative;
 
+		& svg {
+			position: absolute;
+			bottom: 0;
+		}
+	}
 }
