@@ -1,0 +1,104 @@
+.cruelty-gallery {
+	padding: 100px 145px 60px;
+
+	&__title {
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	&__description {
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	&__container {
+		display: grid;
+		grid-template-rows: repeat(15, minmax(min-content, 37.3px));
+		grid-template-columns: repeat(25, minmax(min-content, 46px));
+	}
+
+	&__rectangle {
+		max-width: 360px;
+		max-height: 190px;
+
+		&-yellow {
+			grid-row: 1 / 6;
+			grid-column: 3 / 11;
+			background-color: #eca900;
+		}
+
+		&-orange {
+			grid-row: 7 / 13;
+			grid-column: 7 / 15;
+			background-color: #d57120;
+		}
+
+		&-green {
+			grid-row: 3 / 16;
+			grid-column: 20 / 26;
+			max-width: 265px;
+			max-height: 450px;
+			background-color: #807522;
+		}
+	}
+
+	&__photo {
+
+		&-cat {
+			grid-row: 2 / 12;
+			grid-column: 1 / 9;
+			z-index: 100;
+		}
+
+		&-dog {
+			z-index: 100;
+			grid-column: 10 / 19;
+
+			&--up {
+				grid-row: 2 / 8;
+			}
+
+			&--down {
+				grid-row: 9 / 15;
+			}
+		}
+
+		&-man {
+			z-index: 50;
+			grid-row: 4 / 16;
+			grid-column: 17 / 25;
+		}
+	}
+
+	&__button {
+		position: relative;
+		display: block;
+		margin: 50px auto 0 auto;
+		max-width: 220px;
+		font-family: Roboto;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.4;
+		color: #77583f;
+		text-align: center;
+
+		&:hover {
+			color: #800000;
+		}
+
+		& svg {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: -70%;
+			stroke: #213632;
+			transition: all 0.3s linear;
+		}
+
+		&:hover svg {
+			left: 20%;
+			stroke: #800000;
+		}
+	}
+
+}
