@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Page for single news"/>
+  <meta name="description" content="Campaign page 'City without cruelty'"/>
   <meta name="keywords" content="slider"/>
 
-  <title>Single news</title>
+  <title>City without cruelty</title>
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header class="cruelty-header">
+  <!-- Page Cruelty Header-->
+  <header class="cruelty-block cruelty-header">
     <div class="cruelty-header__container-image">
       <img src="images/header-photo-min.jpg" alt="Женщина и собака" class="cruelty-header__image">
     </div>
@@ -53,14 +56,361 @@
         <h1 class="cruelty-header__main-title">Город <span>без<br>жестокости</span></h1>
 
         <p class="cruelty-header__main-description">Создаём вместе мир без насилия над животными</p>
+
       </div>
 
-      <div class="cruelty-header__main-container">
-        
+      <div class="cruelty-header__main-buttons">
+        <a href="#" class="cruelty-header__main-button cruelty-header__main-button--filled">Хочу помочь</a>
+
+        <a href="#" class="cruelty-header__main-button cruelty-header__main-button--unfilled">Корпоративным партнерам</a>
       </div>
-    </div> 
-  </header>
-	
+    </div>
+
+    <div class="cruelty-header__heart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="190" height="191" viewBox="0 0 190 191" fill="none">
+          <path d="M119.771 83.7317C123.773 75.3917 122.791 73.2839 134.007 70.5545C142.872 68.3972 158.694 69.0346 167.585 70.7177C181.197 73.2947 179.658 79.6181 173.394 88.182C158.783 108.157 132.374 120.359 111.884 133.661C101.882 140.154 89.6185 148.41 82.9873 158.546C82.0764 159.938 79.6448 167.88 79.0185 163.937" stroke="#ECA900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M122.407 64.1101C118.821 50.0258 115.079 33.679 105.312 22.2725C98.3308 14.1185 83.3642 7.0918 72.4997 10.8326C48.9707 18.9339 42.2423 47.5336 42.8609 68.6659C43.535 91.697 47.4843 113.855 53.4446 136.106C55.1425 142.445 57.4661 148.73 58.7404 155.164C58.9633 156.29 58.8763 161.161 59.2017 160.483" stroke="#ECA900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+  </header> <!-- Page Cruelty Header-->
+  
+  <!-- Page Cruelty Rectangles-->
+  <div class="cruelty-block cruelty-rectangles">
+    <div class="cruelty-rectangles__grey"></div>
+
+    <div class="cruelty-rectangles__cat">
+      <img src="images/rectangles-cat-min.png" alt="Кот" class="cruelty-rectangles__cat-image">
+    </div>
+
+    <div class="cruelty-rectangles__yellow">
+      <div class="cruelty-rectangles__yellow-container">
+        <h3 class="cruelty-title-h3 cruelty-rectangles__yellow-title">Жестокое обращение c животными - это слабость</h3>
+
+        <p class="cruelty-rectangles__yellow-description">Мы видим так много историй о жестоком обращении, что у нас давно уже разбиты сердца. От тех, где собак не кормили до крайнего истощения, привязывали в лесу до историй явного физического насилия ради удовольствия</p>
+      </div>
+    </div>
+
+    <div class="cruelty-rectangles__white">
+      <p class="cruelty-rectangles__white-description">Программма нашего фонда “Город без жестокости” направлена на достижение более гуманного и ответственного отношения к животным, населяющим город (как безнадзорным, так и имеющим владельцев) путем образовательной и просветительской работы</p>
+    </div>
+
+    <div class="cruelty-rectangles__grey cruelty-rectangles__grey--second">
+      <div class="cruelty-rectangles__woman">
+        <img src="images/rectangles-woman-min.png" alt="Женщина и собака" class="cruelty-rectangles__woman-image">
+      </div>
+
+      <div class="cruelty-rectangles__line cruelty-rectangles__line--big">
+        <img src="images/rectangles-line-big-min.png" alt="Линия">
+      </div>
+
+      <div class="cruelty-rectangles__line cruelty-rectangles__line--small-left">
+        <img src="images/rectangles-line-small-left-min.png" alt="Линия">
+      </div>
+
+      <div class="cruelty-rectangles__line cruelty-rectangles__line--small-middle">
+        <img src="images/rectangles-line-small-middle-min.png" alt="Линия">
+      </div>
+
+      <div class="cruelty-rectangles__line cruelty-rectangles__line--small-right">
+        <img src="images/rectangles-line-small-right-min.png" alt="Линия">
+      </div>
+    </div>
+  </div> <!-- Page Cruelty Rectangles-->
+  
+  <!-- Page Cruelty Ways-->
+  <div class="cruelty-block cruelty-ways">
+    <div class="cruelty-ways__image"></div>
+
+    <div class="cruelty-ways__content">
+      <h3 class="cruelty-title-h3 cruelty-ways__title">Вместе мы меняем жизни и общество</h3>
+
+      <p class="cruelty-description cruelty-ways__description">Каждый играет свою роль в изменении повсеместного безответственного отношения к животным. От помощи из дома до участия в масштабных акциях</p>
+
+      <h5 class="cruelty-ways__subtitle">— У каждого есть сила, чтобы помочь:</h5>
+
+      <div class="cruelty-ways__container">
+        <div class="cruelty-ways__donate">
+          <div class="cruelty-ways__donate-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 69 69" fill="none">
+              <g clip-path="url(#clip0)">
+                <path d="M57.5002 49.7215L54.5713 47.9667C53.6785 47.4327 52.657 47.1508 51.6165 47.1502H47.2086C46.3062 47.1486 45.4078 47.2648 44.5352 47.495L31.254 51.0601C29.8019 51.4611 28.6356 52.5426 28.1269 53.9604L16.445 47.6405C15.4977 47.1014 14.3887 46.9183 13.3184 47.1239C12.9147 47.1952 12.5233 47.3238 12.1555 47.5057C11.325 47.9032 10.636 48.5456 10.18 49.3458C9.78136 50.0427 9.57191 50.8316 9.57191 51.634C9.55955 53.2725 10.4277 54.7909 11.845 55.6118L32.7819 68.1389C33.6916 68.7021 34.7394 69.0003 35.8091 69.0003H52.0124C52.7362 69.0008 53.4533 68.8638 54.126 68.5977L57.5002 67.2652V69.0003H69.0002V46.0002H57.5002V49.7215ZM53.2809 66.4588C52.8783 66.6177 52.4487 66.6997 52.0158 66.7003H35.8091C35.1611 66.6997 34.526 66.5172 33.9768 66.1736L13.0112 53.6319C12.2987 53.2203 11.8624 52.4578 11.868 51.6351C11.8697 51.232 11.9758 50.8355 12.1763 50.4851C12.4054 50.0881 12.7501 49.7698 13.164 49.5732C13.3465 49.4845 13.5396 49.4216 13.739 49.3868C13.8844 49.3598 14.0321 49.3458 14.1798 49.3458C14.5751 49.3447 14.9637 49.448 15.3067 49.6445L27.9742 56.4895C27.9888 56.5597 27.9888 56.6288 28.0073 56.699C28.552 58.7064 30.373 60.1007 32.4534 60.1029C33.0936 60.0445 33.7275 59.9311 34.3486 59.7649L46.2967 56.5676L45.7037 54.3456L33.7943 57.5289C33.2699 57.6496 32.5932 57.7878 32.4534 57.7995C31.4146 57.8012 30.5038 57.1072 30.2304 56.1054C30.1933 55.9662 30.1714 55.8235 30.1635 55.6798C30.1635 55.6798 30.1546 55.4013 30.1635 55.3036C30.2511 54.3417 30.925 53.5342 31.8554 53.2753L45.1309 49.7237C45.8087 49.5423 46.5072 49.4502 47.2086 49.4502H51.6165C52.241 49.4502 52.8536 49.6198 53.3887 49.9405L57.5002 52.4022V64.7911L53.2809 66.4588ZM59.8002 48.3002H66.7002V66.7003H59.8002V48.3002Z" fill="#F4EAEA"/>
+                <path d="M47.4308 9.20004L41.2619 3.03171C39.3252 1.08378 36.6899 -0.00781916 33.9435 4.21684e-05H19.4854C18.5932 0.00116522 17.7133 0.20949 16.9142 0.607049L14.3368 1.89631C13.8202 2.15629 13.2463 2.28039 12.6685 2.25737L11.5 2.21638V4.21684e-05H0V25.3H11.5V21.85H13.4552L14.151 22.3099C16.0978 23.6026 18.3646 24.3325 20.7 24.4179V39.1H69V9.20004H47.4308ZM9.2 23H2.3V2.30004H9.2V23ZM15.4239 20.3963L14.1448 19.55H11.5V4.5175L12.5843 4.55624C13.5473 4.5905 14.503 4.38329 15.365 3.95373L17.9401 2.66447C18.4197 2.4247 18.9492 2.30004 19.4854 2.30004H33.9435C36.0796 2.29387 38.1297 3.14289 39.6357 4.65732L44.1784 9.20004H34.6887L31.8973 6.40927L30.2717 8.03488L38.3953 16.159C39.2977 17.0574 39.3005 18.5174 38.402 19.4203C37.503 20.3227 36.0431 20.3255 35.1407 19.4271L28.3558 12.6422L27.5506 13.3323C25.3275 15.2201 22.078 15.2684 19.7993 13.4468L19.1328 12.9067L17.6835 14.6934L18.3573 15.2398C19.062 15.803 19.8532 16.2488 20.7 16.5599V22.1168C18.8178 22.0331 16.9934 21.4384 15.4239 20.3963ZM31.7828 19.3198L33.5179 21.0555C35.3193 22.8299 38.2111 22.8327 40.0153 21.0611C38.3273 23.675 38.9933 27.1536 41.5275 28.9589C44.0616 30.7642 47.5672 30.2572 49.4859 27.8084C51.4047 25.359 51.0582 21.8338 48.6987 19.8055C46.3397 17.7773 42.8021 17.9632 40.6689 20.2272C41.4545 18.9936 41.5948 17.4561 41.0457 16.1H56.4455C56.9402 18.9936 59.2065 21.2599 62.1 21.7546V26.5455C59.2065 27.0402 56.9402 29.3065 56.4455 32.2H33.2545C32.7598 29.3065 30.4935 27.0402 27.6 26.5455V21.7546C29.2436 21.4778 30.7299 20.6124 31.7828 19.3198ZM41.4 24.15C41.4 22.2448 42.9448 20.7 44.85 20.7C46.7552 20.7 48.3 22.2448 48.3 24.15C48.3 26.0553 46.7552 27.6 44.85 27.6C42.9448 27.6 41.4 26.0553 41.4 24.15ZM66.7 36.8H23V17.0417C24.8233 17.1787 26.6409 16.7138 28.175 15.7193L30.137 17.6813C29.2739 18.8538 27.906 19.5472 26.45 19.55H25.3V28.75H26.45C28.9903 28.75 31.05 30.8097 31.05 33.35V34.5H58.65V33.35C58.65 30.8097 60.7097 28.75 63.25 28.75H64.4V19.55H63.25C60.7097 19.55 58.65 17.4904 58.65 14.95V13.8H39.2887L36.9887 11.5H66.7V36.8Z" fill="#F4EAEA"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="69" height="69" fill="white" transform="translate(0 0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+
+          <h6 class="cruelty-ways__donate-subtitle">Оформите ежемесячное пожертвование или сделайте разовый перевод</h6>
+
+          <p class="cruelty-ways__donate-description">Благодаря этому мы можем снимать видеоролики, участвовать в мероприятиях и выставках, чтобы как можно больше людей узнавало, как можно помогать животным, защищать их от насилия                    и жестокости</p>
+
+          <a href="" class="cruelty-ways__donate-button cruelty-ways__button">Пожертвовать</a>
+        </div>
+
+        <div class="cruelty-ways__partner">
+          <div class="cruelty-ways__partner-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="none">
+              <g clip-path="url(#clip0)">
+                <path d="M84.5667 40.8502H72.0964L50.9624 26.7576C50.7266 26.6008 50.4494 26.5175 50.1667 26.5168H38.1737L23.8131 15.3525C23.5618 15.1566 23.2525 15.0502 22.9333 15.0502H1.43333C0.64178 15.0502 0 15.692 0 16.4835V36.5502C0 37.3417 0.64178 37.9835 1.43333 37.9835H7.86304L10.5449 41.7243C10.2139 42.3367 10.0382 43.0212 10.0333 43.7168V45.1502C10.0417 47.0874 11.3442 48.7804 13.2156 49.2836C13.0085 49.7917 12.9014 50.3348 12.9 50.8835V52.3168C12.9084 54.2541 14.2109 55.9471 16.0823 56.4503C15.8751 56.9584 15.7681 57.5015 15.7667 58.0502V59.4835C15.7751 61.4207 17.0775 63.1137 18.949 63.6169C18.7418 64.125 18.6347 64.6681 18.6333 65.2168V66.6502C18.6333 69.0248 20.5587 70.9502 22.9333 70.9502H26.5167C28.554 70.9474 30.3876 69.7128 31.1561 67.8252C31.7741 67.9967 32.4117 68.0835 33.0527 68.0835H58.7667C61.4234 68.0737 63.7616 66.3282 64.5259 63.7835H84.5667C85.3582 63.7835 86 63.1417 86 62.3502V42.2835C86 41.492 85.3582 40.8502 84.5667 40.8502ZM12.9 43.7168C12.9 42.9253 13.5418 42.2835 14.3333 42.2835H17.9167C19.1043 42.2835 20.0667 43.2458 20.0667 44.4335C20.0667 45.6212 19.1043 46.5835 17.9167 46.5835H14.3333C13.5418 46.5835 12.9 45.9417 12.9 45.1502V43.7168ZM15.7667 50.8835C15.7667 50.0919 16.4084 49.4502 17.2 49.4502H20.7833C21.971 49.4502 22.9333 50.4125 22.9333 51.6002C22.9333 52.7878 21.971 53.7502 20.7833 53.7502H17.2C16.4084 53.7502 15.7667 53.1084 15.7667 52.3168V50.8835ZM18.6333 58.0502C18.6333 57.2586 19.2751 56.6168 20.0667 56.6168H23.65C24.8377 56.6168 25.8 57.5792 25.8 58.7668C25.8 59.9545 24.8377 60.9168 23.65 60.9168H20.0667C19.2751 60.9168 18.6333 60.2751 18.6333 59.4835V58.0502ZM26.5167 68.0835H22.9333C22.1418 68.0835 21.5 67.4417 21.5 66.6502V65.2168C21.5 64.4253 22.1418 63.7835 22.9333 63.7835H26.5167C27.7043 63.7835 28.6667 64.7458 28.6667 65.9335C28.6667 67.1212 27.7043 68.0835 26.5167 68.0835ZM58.7667 65.2168H56.6671L51.3634 57.2544L48.9783 58.8459L53.2223 65.2168H48.0629L42.7592 57.2544L40.3741 58.8459L44.6223 65.2168H39.4629L34.1592 57.2544L31.7741 58.8459L36.0223 65.2168H33.0527C32.4838 65.2063 31.9232 65.079 31.406 64.8424C31.0098 63.106 29.7228 61.7098 28.0242 61.1737C28.7646 59.867 28.871 58.2951 28.3139 56.901C27.7561 55.5068 26.5951 54.4423 25.1575 54.007C25.898 52.7004 26.0044 51.1285 25.4473 49.7343C24.8895 48.3402 23.7284 47.2757 22.2909 46.8404C22.7066 46.1055 22.927 45.2775 22.9333 44.4335C22.9333 41.6627 20.6875 39.4168 17.9167 39.4168H14.3333C13.7587 39.4161 13.1897 39.5309 12.6606 39.7549L9.76388 35.7145C9.49443 35.3394 9.06121 35.1168 8.6 35.1168H2.86667V17.9168H22.442L33.6042 26.5945C30.7726 26.9739 28.6611 29.3933 28.6667 32.2502C28.6667 35.4164 31.2338 37.9835 34.4 37.9835H47.8893L61.7768 62.9836C61.3681 64.3049 60.1496 65.2091 58.7667 65.2168ZM83.1333 60.9168H63.9093L59.9277 53.7502H67.3667V50.8835H58.3369L49.9805 35.8433C49.7257 35.3947 49.2498 35.1168 48.7333 35.1168H34.4C32.8169 35.1168 31.5333 33.8333 31.5333 32.2502C31.5333 30.6671 32.8169 29.3835 34.4 29.3835H49.7369L70.8758 43.4761C71.1103 43.6322 71.3853 43.7154 71.6667 43.7168H83.1333V60.9168Z" fill="#EFE1E1"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="86" height="86" fill="white" transform="translate(0 0.00012207)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+
+          <h6 class="cruelty-ways__partner-subtitle">Станьте нашим корпоративным партнером</h6>
+
+          <p class="cruelty-ways__partner-description">Мы будем рады сотрудничеству с вами, чтобы реализовывать совместные проекты и участвовать в различных мероприятиях, интересных бизнесу (НR-работа с сотрудниками, PR/реклама)</p>
+          
+          <a href="" class="cruelty-ways__partner-button cruelty-ways__button">Стать партнером</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Page Cruelty Ways-->
+  
+  <!-- Page Cruelty Additional Ways-->
+  <div class="cruelty-additional-ways">
+    <h3 class="cruelty-title-h3 cruelty-additional-ways__title">Как еще можно помочь</h3>
+    <div class="cruelty-additional-ways__container">
+      <div class="cruelty-additional-ways__card">
+        <h6 class="cruelty-additional-ways__subtitle">Приглашаем к сотрудничеству некоммерческие организации</h6>
+        <p class="cruelty-additional-ways__description">НКО, фонды, библиотеки, центры досуга. У нас есть много общих задач!</p>
+        <a href="" class="cruelty-additional-ways__button-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="129" height="13" viewBox="0 0 129 13" fill="none">
+            <path d="M0 6.55615H125.412" stroke-width="2"/>
+            <path d="M121.444 1L127 6.15938L121.444 11.3188" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="cruelty-additional-ways__card cruelty-additional-ways__card--second">
+        <h6 class="cruelty-additional-ways__subtitle">Станьте волонтером</h6>
+        <p class="cruelty-additional-ways__description">Помогайте своими знаниями, навыками и умениями. Преподаватели, маркетологи, дизайнеры, юристы, smm-щики и энтузиасты - ждем вас.</p>
+        <a href="" class="cruelty-additional-ways__button-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="129" height="13" viewBox="0 0 129 13" fill="none">
+            <path d="M0 6.55615H125.412" stroke-width="2"/>
+            <path d="M121.444 1L127 6.15938L121.444 11.3188" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="cruelty-additional-ways__card cruelty-additional-ways__card--third">
+        <h6 class="cruelty-additional-ways__subtitle">Рассказывайте об ответственном отношении к животным</h6>
+        <p class="cruelty-additional-ways__description">Делитесь историями Фонда в своих социальных сетях и других группах – информационной поддержки не бывает много</p>
+        <a href="" class="cruelty-additional-ways__button-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="129" height="13" viewBox="0 0 129 13" fill="none">
+            <path d="M0 6.55615H125.412" stroke-width="2"/>
+            <path d="M121.444 1L127 6.15938L121.444 11.3188" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div> <!-- Page Cruelty Additional Ways-->
+  
+  <!-- Page Cruelty Needs-->
+  <div class="cruelty-block cruelty-needs">
+    <h3 class="cruelty-title-h3 cruelty-needs__title">На что мы просим помощи:</h3>
+
+    <div class="cruelty-needs__container">
+      <div class="cruelty-needs__card">
+        <div class="cruelty-needs__card-background">
+          <span class="cruelty-needs__card-number">1</span>
+
+          <div class="cruelty-needs__card-content">
+            <h5 class="cruelty-needs__card-title">Проведение интерактивных уроков доброты</h5>
+
+            <p class="cruelty-needs__card-text cruelty-needs__card-text--first">- в дошкольных учреждениях</p>
+            <p class="cruelty-needs__card-text">- в начальных классах</p>
+            <p class="cruelty-needs__card-text">Всегда нужна помощь в создании видео-роликов, раздаточных материалов, поиске свежих идей.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cruelty-needs__card">
+        <div class="cruelty-needs__card-background">
+          <span class="cruelty-needs__card-number">2</span>
+
+          <div class="cruelty-needs__card-content">
+            <h5 class="cruelty-needs__card-title">Социальная реклама</h5>
+
+            <p class="cruelty-needs__card-text">- на улицах</p>
+            <p class="cruelty-needs__card-text">- на стендах сити-формата</p>
+            <p class="cruelty-needs__card-text">- на информационных стендах Управ районов г. Москвы</p>
+            <p class="cruelty-needs__card-text">- на информационных досках подъездов домов</p>
+            <p class="cruelty-needs__card-text">Всегда нужна помощь в изготовлении плакатов, рекламные площадки, поддержка в проведении творческих конкурсов (поощрение победителей)</p>
+          </div>
+        </div>
+      </div>
+      <div class="cruelty-needs__card">
+        <div class="cruelty-needs__card-background">
+          <span class="cruelty-needs__card-number">3</span>
+
+          <div class="cruelty-needs__card-content">
+            <h5 class="cruelty-needs__card-title">Проведение фотовыставок</h5>
+
+            <p class="cruelty-needs__card-text">- антикафе</p>
+            <p class="cruelty-needs__card-text">- котокафе</p>
+            <p class="cruelty-needs__card-text">- библиотеки</p>
+            <p class="cruelty-needs__card-text">Услуги профессиональных фотографов, фотостудии, ретуширование, печать фотографий, транспорт.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cruelty-needs__card cruelty-needs__card--last">
+        <!--  <div class="cruelty-needs__card-container-image">
+          <img src="images/needs-dog-min.png" alt="Собака" class="cruelty-needs__card-image"> 
+        </div> -->
+
+        <a href="#" class="cruelty-needs__card-button">Пожертвовать
+          <svg xmlns="http://www.w3.org/2000/svg" width="129" height="13" viewBox="0 0 129 13" fill="none">
+            <path d="M0 6.55615H125.412" stroke-width="2"></path>
+            <path d="M121.444 1L127 6.15938L121.444 11.3188" stroke-width="2"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div> <!-- Page Cruelty Needs-->
+  
+  <!-- Page Cruelty Results-->
+  <div class="cruelty-block cruelty-results">
+    <h3 class="cruelty-title-h3 cruelty-results__title">Результаты нашей работы</h3>
+    <p class="cruelty-description cruelty-results__description">Фотографии уроков, примеры социальной рекламы фонда, проведения фотовыставок</p>
+
+    <div class="cruelty-results__container">
+      <input id="goodness-lessons" type="radio" class="cruelty-results__tab" name="results-tabs" checked>
+      <label for="goodness-lessons" class="cruelty-results__label">Уроки доброты
+        <a href="#" class="cruelty-results__label-link">Смотреть все фото</a>
+      </label>
+      <div class="cruelty-results__slider cruelty-results__content">
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/slider-godness-lesson-1-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/slider-godness-lesson-2-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/slider-godness-lesson-3-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/slider-godness-lesson-5-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/slider-godness-lesson-6-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+      </div>
+
+      <input id="social-ad" type="radio" class="cruelty-results__tab" name="results-tabs">
+      <label for="social-ad" class="cruelty-results__label">Социальная реклама
+        <a href="#" class="cruelty-results__label-link">Смотреть все фото</a>
+      </label>
+      <div class="cruelty-results__slider cruelty-results__content">
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/social-ad-1-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/social-ad-2-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/social-ad-3-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/social-ad-4-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/social-ad-5-min.jpg" alt="Уроки доброты" class="cruelty-results__slider-image">
+        </div>
+      </div>
+
+      <input id="photo-exhibitions" type="radio" class="cruelty-results__tab" name="results-tabs">
+      <label for="photo-exhibitions" class="cruelty-results__label">Фотовыставки
+        <a href="#" class="cruelty-results__label-link">Смотреть все фото</a>
+      </label>
+      <div class="cruelty-results__slider cruelty-results__content">
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/photo-exhibitions-1-min.jpg" alt="Фотовыставки" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/photo-exhibitions-4-min.jpg" alt="Фотовыставки" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/photo-exhibitions-3-min.jpg" alt="Фотовыставки" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/photo-exhibitions-2-min.jpg" alt="Фотовыставки" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/photo-exhibitions-5-min.jpg" alt="Фотовыставки" class="cruelty-results__slider-image">
+        </div>
+      </div>
+
+      <input id="contests" type="radio" class="cruelty-results__tab" name="results-tabs">
+      <label for="contests" class="cruelty-results__label">Конкурсы
+        <a href="#" class="cruelty-results__label-link">Смотреть все фото</a>
+      </label>
+      <div class="cruelty-results__slider cruelty-results__content">
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/contests-1-min.jpg" alt="Конкурсы" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/contests-2-min.jpg" alt="Конкурсы" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/contests-3-min.JPG" alt="Конкурсы" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/contests-4-min.JPG" alt="Конкурсы" class="cruelty-results__slider-image">
+        </div>
+        <div class="cruelty-results__slider-container-image">
+          <img src="images/contests-5-min.jpg" alt="Конкурсы" class="cruelty-results__slider-image">
+        </div>
+      </div>
+    </div>
+  </div> <!-- Page Cruelty Results-->
+  
+  <!-- Page Cruelty Gallery-->
+  <div class="cruelty-block cruelty-gallery">
+    <h3 class="cruelty-title-h3 cruelty-gallery__title">Помогайте животным в компании единомышленников</h3>
+
+    <p class="cruelty-description cruelty-gallery__description">Любите животных? Мы должны быть друзьями! Хотите помочь, стать волонтером? Свяжитесь с нами!</p>
+
+    <div class="cruelty-gallery__container">
+      <div class="cruelty-gallery__rectangle cruelty-gallery__rectangle-yellow"></div>
+      <div class="cruelty-gallery__rectangle cruelty-gallery__rectangle-orange"></div>
+      <div class="cruelty-gallery__rectangle cruelty-gallery__rectangle-green"></div>
+
+      <div class="cruelty-gallery__photo-cat">
+        <img src="images/gallery-cat-min.jpg" alt="Кот">
+      </div>
+
+      <div class="cruelty-gallery__photo-dog cruelty-gallery__photo-dog--up">
+        <img src="images/gallery-dog-up-min.jpg" alt="Собака">
+      </div>
+
+      <div class="cruelty-gallery__photo-dog cruelty-gallery__photo-dog--down">
+        <img src="images/gallery-dog-down-min.jpg" alt="Собака">
+      </div>
+
+      <div class="cruelty-gallery__photo-man">
+        <img src="images/gallery-man-dog-min.png" alt="Человек и собака">
+      </div>
+    </div>
+
+    <a href="#" class="cruelty-gallery__button">Связаться и помочь
+      <svg xmlns="http://www.w3.org/2000/svg" width="150" height="13" viewBox="0 0 129 13" fill="none">
+        <path d="M0 6.55615H125.412" stroke-width="2"></path>
+        <path d="M121.444 1L127 6.15938L121.444 11.3188" stroke-width="2"></path>
+      </svg>
+    </a>
+  </div> <!-- Page Cruelty Gallery-->
+  
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
