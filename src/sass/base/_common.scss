@@ -75,6 +75,18 @@ input[type=number] {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
+
+  @media screen and (max-width: 1025px) {
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 }
 
 .cruelty-description {
