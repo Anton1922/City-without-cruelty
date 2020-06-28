@@ -1261,88 +1261,117 @@ input[type=number] {
         .cruelty-additional-ways__button-arrow:hover svg {
           left: calc(60% - 64.5px); } }
 
-.cruelty-needs {
-  padding: 120px 140px 135px; }
-  .cruelty-needs__title {
-    margin-bottom: 55px;
-    text-align: center; }
-  .cruelty-needs__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .cruelty-needs__card {
-    width: 45%;
-    max-width: 560px; }
-    .cruelty-needs__card--last {
-      position: relative;
-      background-image: url("images/needs-dog-min.png");
-      /*https://less-homeless.com/wp-content/uploads/2020/06/needs-dog-min.png*/
-      background-size: auto;
-      background-position: 40% 75%; }
-    .cruelty-needs__card-background {
-      position: relative; }
-    .cruelty-needs__card-number {
-      font-weight: 900;
-      font-size: 288px;
-      line-height: 1.4;
-      color: #eca900;
-      text-shadow: -1px 0 #d3d3d3, 0 1px #d3d3d3, 1px 0 #d3d3d3, 0 -1px #d3d3d3; }
-    .cruelty-needs__card-content {
+.cruelty-needs__title {
+  margin-bottom: 55px;
+  text-align: center; }
+
+.cruelty-needs__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media screen and (max-width: 500px) {
+    .cruelty-needs__container {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+.cruelty-needs__card {
+  width: 45%;
+  max-width: 560px; }
+  @media screen and (max-width: 500px) {
+    .cruelty-needs__card {
+      margin-bottom: 20px;
+      width: 100%; } }
+  .cruelty-needs__card--last {
+    position: relative;
+    background-image: url("images/needs-dog-min.png");
+    /*https://less-homeless.com/wp-content/uploads/2020/06/needs-dog-min.png*/
+    background-size: auto;
+    background-position: 40% 75%; }
+    @media screen and (max-width: 1025px) {
+      .cruelty-needs__card--last {
+        background-position: 60% 75%; } }
+    @media screen and (max-width: 800px) {
+      .cruelty-needs__card--last {
+        background-size: cover;
+        background-position: 40% 75%; } }
+    @media screen and (max-width: 500px) {
+      .cruelty-needs__card--last {
+        min-height: 200px;
+        background-size: 100%;
+        background-repeat: no-repeat; } }
+  .cruelty-needs__card-background {
+    position: relative; }
+  .cruelty-needs__card-number {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 900;
+    font-size: 288px;
+    line-height: 1.4;
+    color: #eca900;
+    text-shadow: -1px 0 #d3d3d3, 0 1px #d3d3d3, 1px 0 #d3d3d3, 0 -1px #d3d3d3; }
+    @media screen and (max-width: 500px) {
+      .cruelty-needs__card-number {
+        font-size: 250px; } }
+  .cruelty-needs__card-content {
+    padding-top: 80px;
+    padding-left: 80px; }
+  .cruelty-needs__card-title {
+    position: relative;
+    margin-bottom: 0;
+    max-width: 420px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5; }
+    .cruelty-needs__card-title::before {
+      content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      padding-top: 80px;
-      padding-left: 80px; }
-    .cruelty-needs__card-title {
-      position: relative;
-      margin-bottom: 0;
-      max-width: 420px;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.5; }
-      .cruelty-needs__card-title::before {
-        content: "";
-        position: absolute;
-        top: 12px;
-        left: -82px;
-        width: 53px;
-        border-top: 3px solid #213632; }
-    .cruelty-needs__card-text {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.5; }
-      .cruelty-needs__card-text:not(.cruelty-needs__card-text--first) {
-        margin-top: 10px; }
-    .cruelty-needs__card-button {
+      top: 12px;
+      left: -82px;
+      width: 53px;
+      border-top: 3px solid #213632; }
+  .cruelty-needs__card-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5; }
+    .cruelty-needs__card-text:not(.cruelty-needs__card-text--first) {
+      margin-top: 10px; }
+  .cruelty-needs__card-button {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    max-width: 120px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #77583f;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    @media screen and (max-width: 500px) {
+      .cruelty-needs__card-button {
+        left: calc(50% - 60px);
+        bottom: -20%; } }
+    .cruelty-needs__card-button:hover {
+      color: #800000; }
+    .cruelty-needs__card-button svg {
       position: absolute;
-      bottom: 60px;
-      left: 0;
-      max-width: 120px;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 1.4;
-      color: #77583f;
-      -webkit-transition: all 0.3s linear;
-      -o-transition: all 0.3s linear;
-      transition: all 0.3s linear; }
-      .cruelty-needs__card-button:hover {
-        color: #800000; }
-      .cruelty-needs__card-button svg {
-        position: absolute;
-        left: 5%;
-        bottom: -70%;
-        stroke: #000;
-        -webkit-transition: left 0.3s linear;
-        -o-transition: left 0.3s linear;
-        transition: left 0.3s linear; }
-      .cruelty-needs__card-button:hover svg {
-        left: 20%;
-        stroke: #800000; }
+      left: 5%;
+      bottom: -70%;
+      stroke: #000;
+      -webkit-transition: left 0.3s linear;
+      -o-transition: left 0.3s linear;
+      transition: left 0.3s linear; }
+    .cruelty-needs__card-button:hover svg {
+      left: 20%;
+      stroke: #800000; }
 
 .cruelty-gallery {
   padding: 100px 145px 60px; }
