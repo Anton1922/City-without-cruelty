@@ -66,9 +66,14 @@ input[type=number] {
 
 .cruelty-block {
   margin: 0 auto;
+  padding: 120px 140px 135px;
   max-width: 1440px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
+
+  @media screen and (max-width: 1025px) {
+    padding: 60px 10px 70px;
+  }
 }
 
 .cruelty-title-h3 {
