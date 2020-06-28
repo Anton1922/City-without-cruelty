@@ -1,6 +1,10 @@
 .cruelty-additional-ways {
-	padding: 120px 140px 135px;
 	background-color: #f8f8f8;
+
+	@media screen and (max-width: 500px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
 	&__title {
 		margin-bottom: 55px;
@@ -11,6 +15,11 @@
 		display: flex;
 		justify-content: center;
 		width: 100%;
+
+		@media screen and (max-width: 800px) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__card {
@@ -23,16 +32,44 @@
 		max-width: 362px;
 		border: 1px solid #f8e2e2;
 		background-color: #fff;
-		background-image: url("images/additional-ways-girl-min.jpg");/*https://less-homeless.com/wp-content/uploads/2020/06/additional-ways-girl-min.jpg*/
+		background-image: url("images/additional-ways-girl-min.jpg");
+		/*https://less-homeless.com/
+		wp-content/uploads/2020/06/
+		additional-ways-girl-min.jpg*/
 		background-repeat: no-repeat;
+
+		@media screen and (max-width: 1025px) {
+			max-width: 500px;
+		}
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 20px;
+			width: 100%;
+			max-width: 700px;
+			background-size: cover;
+		}
+
+		@media screen and (max-width: 500px) {
+			padding: 160px 20px 10px;
+		}
 
 		&--second {
 			margin: 0 25px;
-			background-image: url("images/additional-ways-lesson-min.jpg");/*https://less-homeless.com/wp-content/uploads/2020/06/additional-ways-lesson-min.jpg*/
+			background-image: url("images/additional-ways-lesson-min.jpg");
+			/*https://less-homeless.com/
+			wp-content/uploads/2020/06/
+			additional-ways-lesson-min.jpg*/
+
+			@media screen and (max-width: 800px) {
+				margin-bottom: 20px;
+			}
 		}
 
 		&--third {
-			background-image: url("images/additional-ways-dog-min.jpg");/*https://less-homeless.com/wp-content/uploads/2020/06/additional-ways-dog-min.jpg*/
+			background-image: url("images/additional-ways-dog-min.jpg");
+			/*https://less-homeless.com/
+			wp-content/uploads/2020/06/
+			additional-ways-dog-min.jpg*/
 		}
 
 		&::after {
@@ -50,6 +87,11 @@
 		z-index: 100;
 		font-size: 16px;
 		line-height: 1.5;
+
+		@media screen and (max-width: 500px) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 
 	&__subtitle {
@@ -72,12 +114,20 @@
 			left: 0;
 			stroke: #000;
 			transition: all 0.3s linear;
+
+			@media screen and (max-width: 500px) {
+				left: calc(50% - 64.5px);
+			}
 		}
 
 		&:hover svg {
 			left: 10%;
 			//fill: #fff;
 			stroke: #f8e2e2;
+
+			@media screen and (max-width: 500px) {
+				left: calc(60% - 64.5px);
+			}
 		}
 	}
 
