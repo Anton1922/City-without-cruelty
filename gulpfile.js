@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
+const gcmq = require('gulp-group-css-media-queries');
 
 gulp.task('sass', function() {
   return gulp
@@ -13,6 +14,7 @@ gulp.task('sass', function() {
   .pipe(autoprefixer({
     cascade: false
   }))
+  .pipe(gcmq())
   .pipe(gulp.dest('./dist'))
   .pipe(browserSync.stream());
 });
