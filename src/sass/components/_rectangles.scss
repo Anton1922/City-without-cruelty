@@ -59,18 +59,8 @@
 		left: 0;
 		width: 100%;
 		
-		@media screen and (max-width: 800px) {
-			/*background-image: url('images/rectangles-woman-min.png');
-			background-size: cover;
-			background-position: bottom left;*/
-		}
-		
 		&-image {
 			width: 100%;
-
-			/*@media screen and (max-width: 800px) {
-				display: none;
-			}*/
 		}
 	}
 
@@ -179,6 +169,10 @@
 			}
 
 			@media screen and (max-width: 800px) {
+				grid-row: 3 / 4;
+			}
+
+			@media screen and (max-width: 500px) {
 				grid-row: 2 / 3;
 			}
 
