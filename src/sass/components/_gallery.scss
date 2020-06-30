@@ -2,7 +2,7 @@
 	padding: 100px 145px 60px;
 
 	@media screen and (max-width: 1025px) {
-		padding: 50px 72px 30px;
+		padding: 50px 10px 30px;
 	}
 
 	@media screen and (max-width: 800px) {
@@ -95,6 +95,10 @@
 			z-index: 50;
 			grid-row: 4 / 16;
 			grid-column: 17 / 25;
+
+			@media screen and (max-width: 1025px) {
+				grid-column: 18 / 26;
+			}
 		}
 	}
 
