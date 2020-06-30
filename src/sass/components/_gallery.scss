@@ -1,6 +1,18 @@
 .cruelty-gallery {
 	padding: 100px 145px 60px;
 
+	@media screen and (max-width: 1025px) {
+		padding: 50px 72px 30px;
+	}
+
+	@media screen and (max-width: 800px) {
+		padding: 25px 10px 20px;
+	}
+
+	@media screen and (max-width: 500px) {
+		padding: 25px 0 20px;
+	}
+
 	&__title {
 		margin-bottom: 25px;
 		text-align: center;
@@ -15,6 +27,22 @@
 		display: grid;
 		grid-template-rows: repeat(15, minmax(min-content, 37.3px));
 		grid-template-columns: repeat(25, minmax(min-content, 46px));
+
+		@media screen and (max-width: 1025px) {
+			grid-template-rows: repeat(15, minmax(min-content, 30px));
+		}
+
+		@media screen and (max-width: 800px) {
+			grid-template-rows: repeat(15, minmax(min-content, 20px));
+		}
+
+		@media screen and (max-width: 500px) {
+			grid-template-rows: repeat(15, minmax(min-content, 15px));
+		}
+
+		@media screen and (max-width: 360px) {
+			grid-template-rows: repeat(15, minmax(min-content, 10px));
+		}
 	}
 
 	&__rectangle {
