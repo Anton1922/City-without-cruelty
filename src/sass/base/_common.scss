@@ -70,8 +70,10 @@ input[type=number] {
   max-width: 1440px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
+}
 
-  @media screen and (max-width: 1025px) {
+@media screen and (max-width: 1025px) {
+  .cruelty-block:not(.cruelty-header):not(.cruelty-rectangles):not(.cruelty-ways) {
     padding: 60px 10px 70px;
   }
 }
