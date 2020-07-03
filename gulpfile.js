@@ -12,7 +12,8 @@ gulp.task('sass', function() {
   .src('./src/sass/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({
-    cascade: false
+    cascade: false,
+    grid: true
   }))
   .pipe(gcmq())
   .pipe(gulp.dest('./dist'))
