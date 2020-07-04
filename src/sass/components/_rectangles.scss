@@ -29,7 +29,6 @@
 		&--second {
 			grid-row: 2 / 3;
 			grid-column: 17 / 37;
-			//z-index: 100;
 			display: grid;
 			grid-template-columns: repeat(18, 1fr);
 			grid-template-rows: repeat(10, minmax(min-content, 42.3px));
@@ -52,8 +51,6 @@
 	}
 
 	&__woman {
-		//grid-row: 1 / 11;
-		//grid-column: 1 / 19;
 		position: absolute;
 		bottom: 0;
 		left: 0;
